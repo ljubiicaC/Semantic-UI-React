@@ -11,7 +11,7 @@ export default class ProgressExampleIndicating extends Component {
   render() {
     return (
       <div>
-        <Progress percent={this.state.percent} indicating />
+        <Progress percent={this.state.percent} className='indicating progress active' data-percent={this.state.percent} />
         <Button onClick={this.increment}>Increment</Button>
       </div>
     )
